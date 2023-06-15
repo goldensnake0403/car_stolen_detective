@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ProfileNav"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/navigation_drawer_profile" />
+        <item
+            android:id="@+id/DisplayCarsNav"
+            android:icon="@drawable/ic_top_car"
+            android:title="@string/navigation_drawer_cars" />
+        <item
+            android:id="@+id/RentCarNav"
+            android:icon="@drawable/ic_rent"
+            android:title="@string/navigation_drawer_rent" />
+        <item
+            android:id="@+id/FeedbackNav"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/navigation_drawer_contact" />
+        <item
+            android:id="@+id/AboutNav"
+            android:icon="@drawable/ic_about"
+            android:title="@string/navigation_drawer_about" />
+        <item
+            android:id="@+id/LogoutNav"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/navigation_drawer_logout" />
+    </group>
+</menu>

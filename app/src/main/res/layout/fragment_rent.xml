@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sys_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:fontFamily="@font/cooper_font"
+            android:text="@string/rent_from"
+            android:textAllCaps="true"
+            android:textColor="@color/FontColor"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_rent_form"
+                android:layout_width="@dimen/spinner_width"
+                android:layout_height="@dimen/spinner_height"
+                android:layout_margin="@dimen/medium_spacing"
+                android:background="@color/HighlightColor"
+                android:textAlignment="center"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                style="@style/DefaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_spacing"
+                android:text="@string/car_id"
+                android:textColor="@color/HighlightColor" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:fontFamily="@font/comic_font"
+            android:text="@string/car_info"
+            android:textColor="@color/FontColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/image_view_rented_car"
+            android:layout_width="@dimen/car_image_dimensions_small"
+            android:layout_height="@dimen/car_image_dimensions_small"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_view_rented_car_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_spacing"
+            android:layout_marginRight="@dimen/large_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:fontFamily="@font/comic_font"
+            android:text="@string/car_type"
+            android:textAlignment="center"
+            android:textColor="@color/HighlightColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_view_rented_car_occasion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_spacing"
+            android:layout_marginRight="@dimen/large_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:fontFamily="@font/comic_font"
+            android:text="@string/car_occasion"
+            android:textAlignment="center"
+            android:textColor="@color/HighlightColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/text_view_rented_car_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_spacing"
+            android:layout_marginRight="@dimen/large_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:fontFamily="@font/comic_font"
+            android:text="@string/phone_number"
+            android:textAlignment="center"
+            android:textColor="@color/HighlightColor"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/large_spacing"
+            android:layout_marginRight="@dimen/large_spacing"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_date_from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/date_from" />
+
+            <TextView
+                android:id="@+id/text_view_date_from"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/date_field_height"
+                android:layout_weight="2"
+                android:background="@color/PrimaryColor"
+                android:fontFamily="@font/comic_font"
+                android:gravity="center"
+                android:textColor="@color/FontColor"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/large_spacing"
+            android:layout_marginRight="@dimen/large_spacing"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_date_to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="@string/date_to"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/text_view_date_to"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/date_field_height"
+                android:layout_weight="2"
+                android:background="@color/PrimaryColor"
+                android:fontFamily="@font/comic_font"
+                android:gravity="center"
+                android:textColor="@color/FontColor"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#000"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_confirm_rent"
+            style="@style/DefaultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner2"
+            android:gravity="center"
+            android:text="@string/confirm_rent"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</ScrollView>

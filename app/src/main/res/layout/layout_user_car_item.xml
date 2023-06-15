@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_spacing"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/image_view_users_car_image_item"
+            android:layout_width="@dimen/car_image_dimensions_large"
+            android:layout_height="@dimen/car_image_dimensions_large"
+            android:background="@drawable/rounded_corner"
+            android:padding="@dimen/small_spacing"
+            android:scaleType="fitXY"
+            tools:src="@drawable/splash_background" />
+
+        <TextView
+            android:id="@+id/text_view_users_car_id_item"
+            style="@style/DefaultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:textSize="@dimen/text_size_small"
+            tools:text="CAR ID" />
+
+        <TextView
+            android:id="@+id/text_view_users_car_type_item"
+            style="@style/DefaultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:textSize="@dimen/text_size_small"
+            tools:text="CAR TYPE" />
+
+        <TextView
+            android:id="@+id/text_view_users_car_occasion_item"
+            style="@style/DefaultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:textSize="@dimen/text_size_small"
+            tools:text="CAR OCCASION" />
+
+        <TextView
+            android:id="@+id/text_view_users_car_price_item"
+            style="@style/DefaultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@drawable/border"
+            android:textSize="@dimen/text_size_small"
+            tools:text="Phone Number" />
+
+        <Button
+            android:id="@+id/rentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:background="@drawable/rounded_corner2"
+            android:textColor="@color/FontColor"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/rent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

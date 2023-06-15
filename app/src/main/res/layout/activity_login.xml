@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth_background"
+    android:orientation="vertical"
+    tools:context=".UserAuthentication.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_image_view_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splash_cover_height"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:transitionName="logo_image" />
+
+    <TextView
+        android:id="@+id/text_view_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_font"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/HighlightColor"
+        android:textSize="@dimen/text_size_large"
+        android:transitionName="logo_text" />
+
+    <LinearLayout
+        style="@style/DefaultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/user_mail"
+            android:textColorHint="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_font"
+                android:inputType="text"
+                android:textColor="@color/HighlightColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@android:color/white"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_edit_text_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_font"
+                android:inputType="textPassword"
+                android:textColor="@color/HighlightColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progress_login_circular"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/large_spacing"
+                android:paddingRight="@dimen/large_spacing"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/button_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/small_spacing"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:background="@android:color/black"
+                android:textSize="@dimen/text_size_xx_small"
+                android:padding="@dimen/medium_spacing"
+                android:text="@string/forget_password"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/DefaultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner2"
+            android:text="@string/login"
+            android:textColor="@android:color/black" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
